@@ -1,0 +1,50 @@
+.navbar-container{
+    background-color: white;
+    margin: 0;
+}
+.logo-img{
+     border-radius: 40px;
+     gap: 20px;
+     height:40px;
+     width:40px;
+     margin-top: -1vh;
+     animation: logoRotation linear 6s infinite;
+}
+.web-name1{
+    font-family: Pacifico;
+    /* color: palevioletred; */
+    color: rgb(204, 4, 187);
+}
+.web-name2{
+    font-family:'Agbalumo' ;
+    color: red;
+}
+.web-name1:hover{
+    font-size: 20px;
+    color: red;
+}
+.web-name2:hover{
+    /* color: rgb(8, 8, 255); */
+    color: rgb(161, 4, 209);
+}
+.nav-logo span{
+    font-size: 26px;
+    font-weight: 600;
+}
+.nav-menu{
+    gap: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-menu li:hover {
+    font-size: 15px;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: groove;
+}
+@keyframes logoRotation {
+    100% {
+      transform: rotate(360deg);
+    }
+  } 

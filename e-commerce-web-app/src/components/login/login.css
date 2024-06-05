@@ -1,0 +1,9 @@
+.login-container {
+    background: linear-gradient(180deg, #fff, #0495ef22 70%);
+    /* background-color: blue; */
+    /* background: blue; */
+    /* background: linear-gradient(180deg, #fff, #69c2fa22 70%); */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
