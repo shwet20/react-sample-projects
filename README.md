@@ -9,7 +9,8 @@
 # Natural Gas Mini Tab
 - Employee management    
 - Storage based data manipulation    
-- Complete CRUD operation    
+- Complete CRUD operation   
+- [Visit Working Demo](https://natural-gas-minitab.netlify.app/)
 
 # Cart Functionality App
 - React + Vite + Redux    
@@ -32,4 +33,4 @@
 - OnClick Pagination    
 - Search & Filter functionality    
 - Context - State management
-- [VisitWorkingDemo](https://car-search-seller-app.netlify.app/)
+- [Visit Working Demo](https://car-search-seller-app.netlify.app/)
