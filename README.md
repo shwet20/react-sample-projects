@@ -17,3 +17,8 @@
 • Search functionality
 • Add to cart, Cart management
 • API integration
+
+# My Video Player
+• React + TypeScript + Vite
+• Video breakpoints
+• Time span controlled by buttons
