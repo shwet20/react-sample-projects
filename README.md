@@ -31,3 +31,4 @@
 • All car cards listing    
 • OnClick Pagination    
 • Search & Filter functionality    
+• Context - State management
