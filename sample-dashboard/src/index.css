@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* ------------------------- APP --------------------  */
+.wrapper {
+  display: flex;
+}
+
+.wrapper .sideBar {
+  width: 17%;
+  background-color: #fff;
+  border-right: solid 1px #ccc;
+}
+.wrapper .container {
+  width: 83%;
+}
+.wrapper .container .cards {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* ------------------------- Header --------------------  */
+.wrapper header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: solid 1px #ccc;
+}
+.wrapper header .appLogo {
+  color: #011517;
+  font-weight: bold;
+  font-size: 20px;
+}
+.wrapper header .headerFilter {
+  display: flex;
+  gap: 10px;
+}
+.wrapper header .headerFilter select,
+.wrapper header .headerFilter .button {
+  border: solid 1px #011517;
+  padding: 3px 5px;
+  color: #011517;
+}
+.wrapper header .headerFilter .button {
+  display: flex;
+  gap: 2px;
+}
+.wrapper header .headerFilter .button label {
+  color: #011517;
+}
+.wrapper header .headerFilter .button .batch {
+  background-color: greenyellow;
+  color: #011517;
+  padding: 1px 5px;
+  font-size: 14px;
+  border-radius: 100%;
+}
+.wrapper header .headerFilter .button2 {
+  border: solid 1px #011517;
+  background-color: #011517;
+  padding: 3px 5px;
+  color: #fff;
+  font-size: 14px;
+}
+/* ------------------------- Sidebar -----------------------  */
+.sideBar .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: solid 1px #ccc;
+  justify-content: space-between;
+}
+.sideBar .header .logoSection {
+  display: flex;
+  width: 85%;
+  gap: 15px;
+  border-right: solid 1px #ccc;
+  padding: 15px;
+}
+.sideBar .header .logo {
+  display: flex;
+  border: solid 1px #ccc;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.sideBar .header p {
+  font-size: 12px;
+  color: #575757;
+}
+.sideBar .header span {
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+}
+.sideBar .header .togglebtn {
+  display: flex;
+  width: 15%;
+  align-items: center;
+  justify-content: space-between;
+}
+.sideBar .menu-items .dashboard {
+  background-color: rgb(176, 255, 176);
+  color: green;
+}
+.sideBar .menu-items .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  gap: 10px;
+  padding: 10px;
+  transition: all 500ms ease-in-out;
+}
+.sideBar .menu-items .menu:hover {
+  background-color: rgb(176, 255, 176);
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+.sideBar .menu-items .menu .iconText {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.sideBar .menu-items .menu .menu-logo,
+.sideBar .menu-items2 .menu .menu-logo {
+  margin-top: 3px;
+}
+.sideBar .menu-items2 .text {
+  font-size: 13px;
+  font-weight: 300px;
+  color: gray;
+  padding: 10px;
+}
+.sideBar .menu-items2 .menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+/* ------------------------- ScoreCard -----------------------  */
+.scorecard {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  box-shadow: #575757;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.scorecard .row1,
+.scorecard .row2 {
+  display: flex;
+  justify-content: space-between;
+}
+.scorecard .row1 .title-wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.scorecard .row1 .title-wrapper .title {
+  font-weight: 600;
+  font-size: 14px;
+}
+.scorecard .row1 .title-wrapper .info-logo {
+  color: gray;
+  margin-top: 3px;
+}
+.scorecard .row1 .text {
+  color: green;
+  font-size: 14px;
+  font-weight: 600;
+}
+.scorecard .row2 .increment,
+.scorecard .row2 .decrement {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+}
+.scorecard .row2 .increment {
+  color: green;
+  background-color: rgb(196, 254, 196);
+}
+.scorecard .row2 .decrement {
+  color: brown;
+  background-color: rgb(244, 192, 192);
+}
+.scorecard .row2 .percentage {
+  font-weight: 700;
+  font-size: 22px;
+}
+.scorecard .row3 {
+  display: flex;
+  justify-content: space-between;
+}
+.scorecard .row3 .section {
+  display: flex;
+  gap: 15px;
+}
+.scorecard .row3 .section span {
+  color: gray;
+  font-size: 12px;
+}
+.scorecard .row3 .section .digit {
+  font-weight: 700;
+}
+/* ------------------------- GraphCard -----------------------  */
+.graphRow {
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+}
+.graphRow .graphCard {
+  width: 64.4%;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+.graphRow .cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.graphRow .leaderBoard .title,
+.courseTable .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  padding: 10px;
+}
+.graphRow .cardHeader .title,
+.courseTable .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+.graphRow .cardHeader .title svg {
+  margin-top: 5px;
+  fill: #ccc;
+}
+.graphRow .cardHeader span,
+.graphRow .leaderBoard .title span,
+.courseTable .title span {
+  font-size: 12px;
+  color: darkcyan;
+  font-weight: 700;
+}
+.graphCard .graph {
+  margin-top: 10px;
+}
+/* ------------------------- LeatherBoard -----------------------  */
+.leaderBoard {
+  width: 33%;
+  background-color: #fff;
+  border: solid 1px #ccc;
+}
+.leaderBoard table,
+.courseTable table {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-collapse: collapse;
+}
+.leaderBoard table thead,
+.courseTable table thead {
+  background-color: #ddd;
+}
+.leaderBoard table th,
+.courseTable table th {
+  font-size: 12px;
+  color: darkcyan;
+  text-align: left;
+  padding: 10px 10px;
+  border: none;
+  font-size: 12px;
+}
+.leaderBoard table tr td,
+.courseTable table tr td {
+  padding: 23px 10px;
+  border-bottom: solid 1px #ddd;
+  font-size: 14px;
+}
+.leaderBoard table thead :nth-child(2),
+.leaderBoard table thead th:nth-child(3),
+.leaderBoard table tr td:nth-child(2),
+.leaderBoard table tr td:nth-child(3) {
+  text-align: center !important;
+}
+.leaderBoard .tablePagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.leaderBoard .tablePagination .currentPage {
+  color: #b5b5b5;
+}
+.leaderBoard .tablePagination .currentNumber {
+  display: flex;
+}
+.leaderBoard .tablePagination .currentNumber {
+  display: flex;
+}
+.leaderBoard .tablePagination .currentNumber svg {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: solid 1px #ddd;
+  /* box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1); */
+}
+.leaderBoard .tablePagination .currentNumber svg:nth-child(1) {
+  color: #ddd;
+}
+/* ------------------------- CourseTable -----------------------  */
+.courseTable {
+  margin: 20px 20px 20px 20px;
+  background-color: #fff;
+  border: solid 1px #ddd;
+}
