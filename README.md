@@ -26,3 +26,8 @@
 # Sample Dashboard
 • Dashboard Layout    
 • Graph, Table, Progress Bar, Sidebar, Filter and other many more components    
+
+# Seller App
+• All car cards listing    
+• OnClick Pagination    
+• Search & Filter functionality    
